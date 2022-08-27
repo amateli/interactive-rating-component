@@ -19,24 +19,38 @@
   <body>
     <main class="container">
       <div class="content">
+        <form action="./" method="post"></form>
         <div class="star">
           <img src="./images/icon-star.svg" alt="ShineLikeAstar" />
         </div>
-        <h2 class="rating-text">How did we do?</h2>
+        <h2 class="rating-us">How did we do?</h2>
         <p class="feedback">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <form action="./" method="post">
           <div class="rating">
-            <input type="button" class="rating-number" value="1" />
-            <input type="button" class="rating-number" value="2" />
-            <input type="button" class="rating-number" value="3" />
-            <input type="button" class="rating-number" value="4" />
-            <input type="button" class="rating-number" value="5" />
+            <input type="radio" class="rating-number" name="rate" id="rate1" value="1" />
+            <label for="rate1" class="rating-number">1</label>
+            <input type="radio" class="rating-number" name="rate" id="rate2" value="2" />
+            <label for="rate2" class="rating-number">2</label>
+            <input type="radio" class="rating-number" name="rate" id="rate3" value="3"/>
+            <label for="rate3" class="rating-number">3</label>
+            <input type="radio" class="rating-number" name="rate" id="rate4" value="4"/>
+            <label for="rate4" class="rating-number">4</label>
+            <input type="radio" class="rating-number" name="rate" id="rate5" value="5"/>
+            <label for="rate5" class="rating-number">5</label>
           </div>
           <button class="submit">submit</button>
         </form>
+      </div>
+      <div class="thank-you">
+        <div class="illustration-image"><img src="./images/illustration-thank-you.svg" alt="thank-you"></div>
+        <div class="rate">
+          <p class="rating-text">You selected <!-- Add rating here --> out of 5</p>
+        </div>
+        <h1 class="rating-us">Thank you!</h1>
+        <p class="feedback">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
       </div>
     </main>
 
@@ -46,8 +60,7 @@
         class="foot"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a class="foot" href="#">@teli</a>.
+        >Frontend Mentor</a>. Coded by <a class="foot" href="#">@teli</a>.
     </footer>
   </body>
 </html>
