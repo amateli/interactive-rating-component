@@ -18,8 +18,8 @@
   </head>
   <body>
     <main class="container">
+      <!-- rating-section -->
       <div class="content">
-        <form action="./" method="post"></form>
         <div class="star">
           <img src="./images/icon-star.svg" alt="ShineLikeAstar" />
         </div>
@@ -41,16 +41,17 @@
             <label for="rate5" class="rating-number">5</label>
           </div>
           <button class="submit">submit</button>
-        </form>
       </div>
-      <div class="thank-you">
+
+      <!-- thank-you-section -->
+      <div class="thank-you visible">
         <div class="illustration-image"><img src="./images/illustration-thank-you.svg" alt="thank-you"></div>
         <div class="rate">
-          <p class="rating-text">You selected <!-- Add rating here --> out of 5</p>
+          <p class="rating-text">You selected <span class="rate-score">0</span> out of 5</p>
         </div>
         <h1 class="rating-us">Thank you!</h1>
         <p class="feedback">We appreciate you taking the time to give a rating. If you ever need more support, 
-          don’t hesitate to get in touch!</p>
+          don't hesitate to get in touch!</p>
       </div>
     </main>
 
@@ -63,4 +64,5 @@
         >Frontend Mentor</a>. Coded by <a class="foot" href="#">@teli</a>.
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>
